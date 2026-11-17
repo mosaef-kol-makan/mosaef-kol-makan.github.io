@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlNjM5NDYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2ExMDEwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMDAiIHI9IjE5MCIgZmlsbD0idXJsKCNnKSIvPgogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjIwMCIgcj0iMTY4IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWRhc2hhcnJheT0iMiAxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIuNiIvPgogIDwhLS0gY3Jvc3MgLS0+CiAgPHBhdGggZD0iTTE2NSA4NWg3MHY4MGg4MHY3MGgtODB2ODBoLTcwdi04MEg4NXYtNzBoODB6IiBmaWxsPSIjZmZmIi8+CiAgPCEtLSBoZWFydCAtLT4KICA8cGF0aCBkPSJNMjAwIDI1MmMtMzAtMjItNTItNDAtNTItNjQgMC0xNiAxMi0yOCAyNy0yOCAxMSAwIDIwIDYgMjUgMTUgNS05IDE0LTE1IDI1LTE1IDE1IDAgMjcgMTIgMjcgMjggMCAyNC0yMiA0Mi01MiA2NHoiIGZpbGw9IiNkNjI4MjgiLz4KICA8IS0tIHB1bHNlIGxpbmUgLS0+CiAgPHBvbHlsaW5lIHBvaW50cz0iMTUyLDIwMCAxNzgsMjAwIDE4OCwxODAgMjAwLDIyMiAyMTIsMTkyIDIyMCwyMDAgMjQ4LDIwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K">
+<title>مسعف في كل مكان</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#d62828;--dark:#7a1010;--bg:#fff7f5;--card:#fff;--txt:#2b2b2b;--muted:#6b6b6b;--green:#1f8a5b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh}
+header{background:linear-gradient(135deg,var(--red),var(--dark));color:#fff;padding:28px 16px 34px;text-align:center;position:relative;overflow:hidden}
+header::after{content:"✚";position:absolute;font-size:220px;opacity:.07;left:-30px;top:-60px}
+.basmala{font-family:'Amiri',serif;font-size:20px;opacity:.95}
+.ayah{font-family:'Amiri',serif;font-size:30px;margin:8px 0 4px;line-height:1.6}
+.ref{font-size:13px;opacity:.85}
+.brand{margin-top:18px;display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.15);padding:8px 20px;border-radius:40px}
+.brand b{font-size:24px;font-weight:800}
+.logo{width:64px;height:64px;border-radius:50%;box-shadow:0 0 0 3px #fff}
+.sub{margin-top:10px;font-size:15px;opacity:.95}
+.wrap{max-width:900px;margin:-18px auto 30px;padding:0 14px;position:relative;z-index:2}
+.emergency{background:#fff;border-radius:16px;padding:14px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.emergency a{flex:1;min-width:130px;text-decoration:none;text-align:center;padding:10px;border-radius:12px;background:#ffecec;color:var(--dark);font-weight:700}
+.emergency a span{display:block;font-size:26px;color:var(--red);font-weight:800}
+.chat{background:var(--card);margin-top:18px;border-radius:18px;box-shadow:0 6px 20px rgba(0,0,0,.08);display:flex;flex-direction:column;height:560px}
+.chat-head{padding:14px 18px;border-bottom:1px solid #f0dada;display:flex;align-items:center;gap:10px;font-weight:700}
+.dot{width:10px;height:10px;background:var(--green);border-radius:50%}
+.msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px}
+.m{max-width:85%;padding:12px 16px;border-radius:16px;line-height:1.8;font-size:15px;white-space:pre-line}
+.bot{background:#fff1f1;align-self:flex-start;border-top-right-radius:4px}
+.user{background:var(--red);color:#fff;align-self:flex-end;border-top-left-radius:4px}
+.bot h4{color:var(--dark);margin-bottom:4px}
+.bot ol{padding-right:20px}
+.bot .warn{margin-top:8px;background:#fff;border-right:4px solid var(--red);padding:6px 10px;border-radius:6px;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:10px 16px;border-top:1px solid #f0dada}
+.chip{border:1px solid var(--red);color:var(--red);background:#fff;border-radius:20px;padding:5px 12px;font-family:inherit;font-size:13px;cursor:pointer}
+.chip:hover{background:var(--red);color:#fff}
+form{display:flex;gap:8px;padding:12px 16px 16px}
+input{flex:1;padding:12px 16px;border:2px solid #f0caca;border-radius:30px;font-family:inherit;font-size:15px;outline:none}
+input:focus{border-color:var(--red)}
+button.send{background:var(--red);color:#fff;border:none;border-radius:30px;padding:0 22px;font-family:inherit;font-weight:700;font-size:15px;cursor:pointer}
+.note{text-align:center;color:var(--muted);font-size:13px;margin-top:14px;line-height:1.8}
+</style>
+</head>
+<body>
+<header>
+  <div class="basmala">بسم الله الرحمن الرحيم</div>
+  <div class="ayah">﴿ وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا ﴾</div>
+  <div class="ref">سورة المائدة – الآية 32</div>
+  <div class="brand"><img class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlNjM5NDYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2ExMDEwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMDAiIHI9IjE5MCIgZmlsbD0idXJsKCNnKSIvPgogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjIwMCIgcj0iMTY4IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWRhc2hhcnJheT0iMiAxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIuNiIvPgogIDwhLS0gY3Jvc3MgLS0+CiAgPHBhdGggZD0iTTE2NSA4NWg3MHY4MGg4MHY3MGgtODB2ODBoLTcwdi04MEg4NXYtNzBoODB6IiBmaWxsPSIjZmZmIi8+CiAgPCEtLSBoZWFydCAtLT4KICA8cGF0aCBkPSJNMjAwIDI1MmMtMzAtMjItNTItNDAtNTItNjQgMC0xNiAxMi0yOCAyNy0yOCAxMSAwIDIwIDYgMjUgMTUgNS05IDE0LTE1IDI1LTE1IDE1IDAgMjcgMTIgMjcgMjggMCAyNC0yMiA0Mi01MiA2NHoiIGZpbGw9IiNkNjI4MjgiLz4KICA8IS0tIHB1bHNlIGxpbmUgLS0+CiAgPHBvbHlsaW5lIHBvaW50cz0iMTUyLDIwMCAxNzgsMjAwIDE4OCwxODAgMjAwLDIyMiAyMTIsMTkyIDIyMCwyMDAgMjQ4LDIwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="شعار"><b>مسعف في كل مكان</b></div>
+  <div class="sub">اكتب اللي حصل… وهنقولك تعمل إيه خطوة بخطوة لحد ما الإسعاف توصل</div>
+</header>
+
+<div class="wrap">
+  <div class="emergency">
+    <a href="tel:123"><span>123</span>الإسعاف</a>
+    <a href="tel:122"><span>122</span>النجدة</a>
+    <a href="tel:180"><span>180</span>المطافي</a>
+    <a href="tel:137"><span>137</span>الطوارئ (الغاز)</a>
+  </div>
+
+  <div class="chat">
+    <div class="chat-head"><div class="dot"></div> المسعف الذكي – متاح دائمًا</div>
+    <div class="msgs" id="msgs"></div>
+    <div class="chips" id="chips"></div>
+    <form id="f"><input id="q" placeholder="مثال: واحد اتحرق في إيده بزيت سخن" autocomplete="off"><button class="send">إرسال</button></form>
+  </div>
+  <p class="note">⚠️ المنصة دي للإسعافات الأولية فقط ولا تغني عن الطبيب.<br>في أي حالة خطيرة: <b>اتصل بالإسعاف 123 أولًا</b> وبعدين ابدأ الخطوات.</p>
+</div>
+
+<script>
+const D=[
+{k:["نزيف","نزف","دم","جرح","اتعور","جرح عميق","قطع"],t:"🩸 نزيف أو جرح",s:["البس جوانتي أو حط كيس نضيف على إيدك لو متاح.","اضغط على الجرح ضغط مباشر بقطعة قماش نضيفة أو شاش لمدة 10 دقايق من غير ما تشيلها.","لو الشاش اتملى دم، حط فوقه طبقة تانية ومتشيلش الأولى.","ارفع الجزء المصاب أعلى من مستوى القلب لو مفيش كسر.","بعد ما النزيف يقف، اربط الشاش برباط مش ضاغط جامد."],w:"لو النزيف شديد أو مش بيقف أو الدم بيطلع بدفعات: اتصل بـ 123 فورًا وكمّل الضغط."},
+{k:["حرق","حروق","اتحرق","اتلسع","مايه سخنه","زيت","نار"],t:"🔥 الحروق",s:["بعّد المصاب عن مصدر الحرارة.","حط مكان الحرق تحت مية جارية فاترة/باردة (مش ساقعة تلج) لمدة 20 دقيقة.","اقلع الخواتم أو الهدوم الضيقة حوالين المكان قبل ما يورم (إلا لو لازقة في الجلد).","غطّي الحرق بشاش نضيف أو كيس بلاستيك نضيف من غير ضغط."],w:"ممنوع: معجون أسنان، زبدة، تلج، أو فقع الفقاقيع. لو الحرق كبير أو في الوش أو الإيد أو عند طفل: اتصل بالإسعاف."},
+{k:["اختناق","اتخنق","زور","شرق","شرقان","حاجه وقفت","مش عارف يتنفس","بلع"],t:"😮‍💨 الاختناق (حاجة واقفة في الزور)",s:["لو بيكح: شجعه يكح ومتتدخلش.","لو مش قادر يتكلم أو يكح: قف وراه ومّيله لقدام واديله 5 ضربات قوية بين لوحي الكتف بكعب إيدك.","لو لسه: اعمل 5 ضغطات بطن (مناورة هيمليك): لف دراعاتك حوالين وسطه، قبضة فوق السرة، واسحب لجوه ولفوق بقوة.","كرر 5 ضربات + 5 ضغطات لحد ما الجسم يطلع."],w:"لو فقد الوعي: اتصل بـ 123 وابدأ إنعاش قلبي رئوي. للرضيع أقل من سنة: ضربات ظهر وضغطات صدر بصباعين بدل ضغطات البطن."},
+{k:["اغماء","اغمي","وقع","فقد الوعي","مش بيرد","دايخ","دوخه"],t:"😵 الإغماء",s:["نيّم المصاب على ضهره وارفع رجليه حوالي 30 سم.","فك أي هدوم ضيقة وخلّي المكان فيه هوا.","لو رجع وعيه: خليه قاعد شوية ومتقومهوش بسرعة، واديله مية لو قادر يبلع.","لو مفاقش خلال دقيقة: اتأكد إنه بيتنفس، ونيّمه على جنبه (وضع الإفاقة) واتصل بـ 123."],w:"لو مش بيتنفس: اتصل بالإسعاف وابدأ الإنعاش القلبي فورًا (اكتب: إنعاش)."},
+{k:["انعاش","قلب","مش بيتنفس","وقف قلبه","ازمه قلبيه","جلطه","وجع صدر","الم صدر"],t:"❤️ أزمة قلبية / توقف التنفس",s:["اتصل بـ 123 فورًا، وخلي حد يجيب جهاز صدمات (AED) لو متاح.","لو واعي وعنده ألم في الصدر: قعّده مسنود وهادي، وفك هدومه.","لو فاقد الوعي ومش بيتنفس: نيّمه على ضهره على أرض صلبة.","حط كعب إيدك في نص الصدر والإيد التانية فوقها، واضغط بعمق 5–6 سم بسرعة 100–120 ضغطة في الدقيقة.","كمّل الضغطات من غير توقف لحد ما الإسعاف توصل أو يرجع يتنفس."],w:"لو مش متدرب على النفخ، الضغطات لوحدها كفاية وبتنقذ حياة."},
+{k:["كسر","اتكسر","عضم","التواء","اتلوى","ملخ","خلع"],t:"🦴 الكسور والالتواء",s:["متحركش الجزء المصاب ومتحاولش ترجعه مكانه.","ثبّته زي ما هو باستخدام جبيرة (خشبة/كرتونة/مجلة) ورباط.","حط كمادات تلج ملفوفة في قماشة 20 دقيقة لتقليل الورم.","ارفع الطرف المصاب لو مفيش ألم شديد."],w:"لو العضم باين أو في إصابة في الرقبة أو الضهر: متحركش المصاب نهائيًا واتصل بـ 123."},
+{k:["مناخير","انف","رعاف","نزيف انف"],t:"👃 نزيف الأنف",s:["قعّد المصاب ومّيل راسه لقدام (مش لورا).","اضغط على الجزء الطري من المناخير بصباعين 10–15 دقيقة.","خليه يتنفس من بقه، وحط كمادة باردة على الأنف.","متخليهوش يمخط أو ينحني لفترة بعدها."],w:"لو النزيف استمر أكتر من 20 دقيقة أو بعد خبطة قوية في الراس: روح للطوارئ."},
+{k:["تشنج","تشنجات","صرع","بيترعش","رجفه"],t:"⚡ التشنجات",s:["بعّد أي حاجة ممكن يتخبط فيها، وحط حاجة طرية تحت راسه.","متمسكهوش ومتحطش أي حاجة في بقه.","احسب وقت التشنج.","بعد ما يخلص: نيّمه على جنبه وخليك جنبه لحد ما يفوق."],w:"اتصل بـ 123 لو التشنج أكتر من 5 دقايق، أو أول مرة، أو اتكرر، أو اتصاب."},
+{k:["تسمم","سم","بلع دوا","شرب كلور","منظف","كيماويات"],t:"☠️ التسمم",s:["اتصل بالإسعاف 123 أو مركز السموم فورًا.","اعرف هو بلع إيه وإمتى وكمية قد إيه، واحتفظ بالعبوة.","متحاولش تخليه يرجّع إلا لو الطبيب طلب.","لو المادة على الجلد أو العين: اغسلها بمية جارية كتير 15 دقيقة."],w:"لو فقد الوعي: نيّمه على جنبه واتأكد إنه بيتنفس."},
+{k:["كهربا","كهرباء","ماس","اتكهرب","صاعق"],t:"🔌 الصعق الكهربائي",s:["متلمسش المصاب قبل ما تفصل الكهربا من المصدر.","لو مش قادر تفصلها، بعّده بحاجة خشب ناشفة وأنت واقف على حاجة عازلة.","اتصل بـ 123.","اتأكد إنه بيتنفس، ولو لأ ابدأ الإنعاش القلبي، وغطّي أي حروق بشاش نضيف."],w:"أي حد اتكهرب لازم يتكشف عليه حتى لو باين كويس."},
+{k:["ضربه شمس","حر","شمس","سخونيه","حراره عاليه","اجهاد حراري"],t:"☀️ ضربة الشمس",s:["انقل المصاب لمكان ضل أو مكيف.","فك هدومه وبرّد جسمه بمية فاترة ومروحة، وكمادات على الرقبة وتحت الباط.","لو واعي، اديله مية أو عصير على جرعات صغيرة.","اتصل بـ 123 لو مرتبك أو مش واعي أو حرارته عالية جدًا."],w:"ضربة الشمس حالة طارئة ممكن تكون خطيرة، متستهونش بيها."},
+{k:["غرق","غرقان","بحر","حمام سباحه","مايه في الرئه"],t:"🌊 الغرق",s:["اتصل بـ 123 ومتنزلش المية لو مش سباح ماهر — ارميله حاجة يمسكها.","بعد ما يطلع: لو مش بيتنفس ابدأ الإنعاش القلبي فورًا (5 نفخات ثم ضغطات لو متدرب).","لو بيتنفس: نيّمه على جنبه وغطّيه عشان يدفى."],w:"أي حد كان هيغرق لازم يتكشف عليه حتى لو فاق."},
+{k:["عضه","عضني","كلب","قطه","تعبان","ثعبان","لدغه","عقرب","نحله","دبور"],t:"🐍 العضات واللدغات",s:["عضة حيوان: اغسل الجرح بمية وصابون 15 دقيقة، وغطيه، وروح للطبيب عشان مصل السعار.","لدغة تعبان أو عقرب: خلي المصاب هادي ومتحركش، وثبّت الطرف أقل من مستوى القلب، واتصل بـ 123.","متشفطش السم ومتعملش رباط ضاغط أو جرح.","لدغة نحلة: شيل الإبرة بكارت من الجنب، وحط تلج."],w:"لو حصل ضيق تنفس أو تورم في الوش بعد لدغة: دي حساسية خطيرة، اتصل بـ 123 فورًا."},
+{k:["حساسيه","ورم في الوش","طفح","هرش"],t:"🤧 الحساسية الشديدة",s:["اتصل بـ 123 فورًا لو في ضيق تنفس أو تورم في الشفايف أو الزور.","لو معاه حقنة إبينفرين (EpiPen) ساعده يستخدمها في الفخد.","قعّده مسنود لو بيتنفس بصعوبة، أو نيّمه ورجليه مرفوعة لو دايخ."],w:""},
+{k:["سكر","هبوط سكر","غيبوبه سكر","سكري"],t:"🍬 هبوط السكر",s:["لو واعي وقادر يبلع: اديله عصير أو مشروب مسكر أو 3–4 معالق سكر في مية.","استنى 15 دقيقة، ولو لسه تعبان كرر.","لما يتحسن اديله أكل خفيف."],w:"لو فاقد الوعي: متحطش أي حاجة في بقه، نيّمه على جنبه واتصل بـ 123."},
+{k:["عين","عيني","حاجه دخلت","تراب في العين"],t:"👁️ إصابات العين",s:["متخليهوش يدعك عينه.","اغسل العين بمية نضيفة جارية من الناحية الداخلية للخارجية.","لو مادة كيماوية: اغسل 15–20 دقيقة متواصلة واتصل بالإسعاف.","لو حاجة مغروزة في العين: متشيلهاش، غطي العينين الاتنين وروح للطوارئ."],w:""},
+{k:["راس","دماغ","خبطه","اتخبط","ارتجاج"],t:"🧠 إصابة الراس",s:["خلي المصاب قاعد أو نايم وهادي، وحط كمادة باردة على مكان الخبطة.","راقبه: لو رجّع، أو دايخ جامد، أو اتلخبط في الكلام، أو نام بشكل غريب — اتصل بـ 123.","لو في احتمال إصابة رقبة: متحركش راسه."],w:"أي فقدان وعي ولو لثواني بعد خبطة يحتاج كشف طبي."}
+];
+const norm=s=>s.replace(/[أإآ]/g,"ا").replace(/ة/g,"ه").replace(/ى/g,"ي").replace(/[ًٌٍَُِّْـ]/g,"").toLowerCase();
+const msgs=document.getElementById("msgs");
+function add(html,cls){const d=document.createElement("div");d.className="m "+cls;d.innerHTML=html;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight}
+function reply(q){
+  const n=norm(q);let best=null,score=0;
+  D.forEach(x=>{let c=0;x.k.forEach(k=>{if(n.includes(norm(k)))c+=norm(k).length});if(c>score){score=c;best=x}});
+  if(!best){add("مقدرتش أفهم الحالة بالظبط 🙏\nجرّب تكتبها بكلمة واضحة زي: نزيف، حرق، اختناق، إغماء، كسر، تشنج، تسمم…\n\n<b>ولو الحالة خطيرة اتصل بالإسعاف 123 فورًا.</b>","bot");return}
+  add(`<h4>${best.t}</h4><ol>${best.s.map(s=>"<li>"+s+"</li>").join("")}</ol>${best.w?`<div class="warn">⚠️ ${best.w}</div>`:""}<div class="warn">📞 في أي شك: اتصل بالإسعاف <b>123</b> وكمّل الخطوات لحد ما توصل.</div>`,"bot");
+}
+add("أهلًا بيك في <b>مسعف في كل مكان</b> 🤍\nقولّي إيه اللي حصل للمصاب، وأنا هقولك تعمل إيه خطوة بخطوة لحد ما الإسعاف توصل.","bot");
+const chips=["نزيف","حرق","اختناق","إغماء","توقف القلب","كسر","تشنجات","ضربة شمس","غرق","لدغة","تسمم","صعق كهربائي"];
+const cw=document.getElementById("chips");
+chips.forEach(c=>{const b=document.createElement("button");b.className="chip";b.textContent=c;b.onclick=()=>{add(c,"user");setTimeout(()=>reply(c),300)};cw.appendChild(b)});
+document.getElementById("f").onsubmit=e=>{e.preventDefault();const i=document.getElementById("q");const v=i.value.trim();if(!v)return;add(v.replace(/</g,"&lt;"),"user");i.value="";setTimeout(()=>reply(v),400)};
+</script>
+</body>
+</html>
